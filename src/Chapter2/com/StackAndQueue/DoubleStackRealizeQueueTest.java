@@ -23,6 +23,9 @@ public class DoubleStackRealizeQueueTest {
         System.out.println(queue.poll());
         System.out.println(queue.poll());
 
+
+        /*边界测试*/
+        System.out.println(queue.poll());
     }
 
 }
