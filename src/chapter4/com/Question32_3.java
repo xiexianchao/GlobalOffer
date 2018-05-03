@@ -39,12 +39,13 @@ public class Question32_3 {
                 if(node.left != null)
                     stack2.push(node.left);
             }
-            leftToRight = false;
+
             if(stack1.isEmpty())
             {
                 System.out.println();
                 stack1 = stack2;
                 stack2 = new Stack<>();
+                leftToRight = !leftToRight;
             }
         }
     }
@@ -52,7 +53,14 @@ public class Question32_3 {
     @Test
     public void test1()
     {
-
+/*     8
+*   6      10
+* 5  7   9   11
+*3 1    4 2
+*
+*
+*
+* */
         BinaryTreeNode root = new BinaryTreeNode(8);
         BinaryTreeNode left1 = new BinaryTreeNode(6);
         BinaryTreeNode right1 = new BinaryTreeNode(10);
