@@ -11,6 +11,12 @@ import org.junit.Test;
  */
 public class Question55 {
     //int depth = 0;
+
+    /**
+     *
+     * @param root
+     * @return 返回以root为根节点的二叉树的深度
+     */
     public int getTreeDepth(TreeNode root)
     {
         if(root == null)
